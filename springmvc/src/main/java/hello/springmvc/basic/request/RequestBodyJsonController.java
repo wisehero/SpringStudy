@@ -3,6 +3,7 @@ package hello.springmvc.basic.request;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import hello.springmvc.basic.HelloData;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.http.HttpEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.util.StreamUtils;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -53,5 +54,20 @@ public class RequestBodyJsonController {
     public String requestBodyJsonV3(@RequestBody HelloData data) {
         log.info("username={}, age={}", data.getUsername(), data.getAge());
         return "ok";
+    }
+
+    @ResponseBody
+    @PostMapping("/request-body-json-v4")
+    public String requestBodyJsonV4(HttpEntity<HelloData> httpEntity) {
+        HelloData data = httpEntity.getBody();
+        log.info("username={} , age={}", data.getUsername(), data.getAge());
+        return "ok";
+    }
+
+    @ResponseBody
+    @PostMapping("/request-body-json-v5")
+    public HelloData requestBodyJsonV5(@RequestBody HelloData data) {
+        log.info("username={}, age={}", data.getUsername(), data.getAge());
+        return data;
     }
 }
