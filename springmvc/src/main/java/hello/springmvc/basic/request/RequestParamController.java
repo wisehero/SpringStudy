@@ -18,10 +18,10 @@ import java.util.Map;
 public class RequestParamController {
 
     @RequestMapping("/request-param-v1")
-    public void requestParamV1(HttpServletRequest request, HttpServletResponse response) throws SecurityException, IOException {
+    public void requestParamV1(HttpServletRequest request, HttpServletResponse response) throws IOException {
 
         String username = request.getParameter("username");
-        int age = Integer.parseInt("age");
+        int age = Integer.parseInt(request.getParameter("age"));
         log.info("username ={} , age={}", username, age);
 
         response.getWriter().write("ok");
@@ -33,7 +33,7 @@ public class RequestParamController {
             @RequestParam("username") String memberName,
             @RequestParam("age") int memberAge) {
 
-        log.info("username={} , age={}", memberName, memberName);
+        log.info("username={} , age={}", memberName, memberAge);
         return "ok";
     }
 
@@ -58,7 +58,7 @@ public class RequestParamController {
     @RequestMapping("/request-param-required")
     public String requestParamRequired(
             @RequestParam(required = true) String username,
-            @RequestParam(required = false) int age) {
+            @RequestParam(required = false) Integer age) {
 
         log.info("username={}, age={}", username, age);
         return "ok";
