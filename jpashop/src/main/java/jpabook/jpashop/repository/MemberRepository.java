@@ -10,7 +10,7 @@ import java.util.List;
 @Repository
 public class MemberRepository {
 
-    @PersistenceContext
+    @PersistenceContext // JPA 표준 애노테이션
     private EntityManager em;
 
     public void save(Member member) {
