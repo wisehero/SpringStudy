@@ -14,7 +14,7 @@ import java.util.List;
 public class MemberService {
 
 
-    MemberRepository memberRepository;
+    private final MemberRepository memberRepository;
 
     /**
      * 회원 가입
