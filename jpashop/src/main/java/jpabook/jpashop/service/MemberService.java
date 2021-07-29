@@ -9,7 +9,7 @@ import org.springframework.transaction.annotation.Transactional;
 import java.util.List;
 
 @Service
-@Transactional(readOnly = true)
+@Transactional(readOnly = true) // findMembers(), findMember에만 적용
 @RequiredArgsConstructor
 public class MemberService {
 
