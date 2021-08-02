@@ -55,11 +55,13 @@ public class FormItemController {
         model.addAttribute("items", items);
         return "form/items";
     }
+
     // 상품 별 정보를 가져온다.
     @GetMapping("/{itemId}")
     public String item(@PathVariable long itemId, Model model) {
         Item item = itemRepository.findById(itemId);
         model.addAttribute("item", item);
+
         return "form/item";
     }
 
@@ -67,6 +69,8 @@ public class FormItemController {
     @GetMapping("/add")
     public String addForm(Model model) {
         model.addAttribute("item", new Item());
+
+
         return "form/addForm";
     }
 
