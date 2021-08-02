@@ -47,6 +47,7 @@ public class FormItemController {
         return deliveryCodes;
     }
 
+    // 상품 목록을 불러온다.
     @GetMapping
     public String items(Model model) {
 
@@ -54,7 +55,7 @@ public class FormItemController {
         model.addAttribute("items", items);
         return "form/items";
     }
-
+    // 상품 별 정보를 가져온다.
     @GetMapping("/{itemId}")
     public String item(@PathVariable long itemId, Model model) {
         Item item = itemRepository.findById(itemId);
@@ -62,15 +63,18 @@ public class FormItemController {
         return "form/item";
     }
 
+    // 상품 추가 화면 요청
     @GetMapping("/add")
     public String addForm(Model model) {
         model.addAttribute("item", new Item());
         return "form/addForm";
     }
 
+    // 상품 추가 생성 요청
     @PostMapping("/add")
     public String addItem(@ModelAttribute Item item, RedirectAttributes redirectAttributes) {
 
+        // 상품 관련 로그 출력
         log.info("item.open={}", item.getOpen());
         log.info("item.regions={}", item.getRegions());
         log.info("item.itemType={}", item.getItemType());
@@ -81,6 +85,7 @@ public class FormItemController {
         return "redirect:/form/items/{itemId}";
     }
 
+    // 상품 수정 폼 화면 요청
     @GetMapping("/{itemId}/edit")
     public String editForm(@PathVariable Long itemId, Model model) {
         Item item = itemRepository.findById(itemId);
