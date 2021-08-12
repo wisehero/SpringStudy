@@ -5,6 +5,7 @@ import board.boardDemo.dto.BoardDto;
 import board.boardDemo.repository.BoardRepository;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+import org.springframework.web.bind.annotation.GetMapping;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -35,4 +36,23 @@ public class BoardService {
         }
         return boardDtoList;
     }
+
+    @Transactional
+    public BoardDto getPost(Long id) {
+        Board board = boardRepository.findById(id).get();
+
+        BoardDto boardDto = BoardDto.builder().
+                id(board.getId())
+                .author(board.getAuthor()).title(board.getTitle()).content(board.getContent())
+                .createdDate(board.getCreatedDate()).build();
+
+        return boardDto;
+    }
+
+    @Transactional
+    public void deletePost(Long id) {
+        boardRepository.deleteById(id);
+    }
+
+
 }
