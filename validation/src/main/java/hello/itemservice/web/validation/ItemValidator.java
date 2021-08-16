@@ -7,7 +7,7 @@ import org.springframework.validation.ValidationUtils;
 import org.springframework.validation.Validator;
 
 @Component
-public class itemValidator implements Validator {
+public class ItemValidator implements Validator {
     @Override
     public boolean supports(Class<?> clazz) {
         // 검증기를 지원하는 지의 여부
