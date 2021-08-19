@@ -1,13 +1,13 @@
-package rubypaper.springquickstart;
+package com.example.jpaquickstart;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SpringquickstartApplication {
+public class JpaquickstartApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SpringquickstartApplication.class, args);
+		SpringApplication.run(JpaquickstartApplication.class, args);
 	}
 
 }
