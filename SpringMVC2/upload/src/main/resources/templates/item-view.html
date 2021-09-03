@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<div class="container">
+    <div class="py-5 text-center">
+        <h2>상품 조회</h2>
+    </div>
+    상품명: <span th:text="${item.itemName}">상품명</span><br/>
+    첨부파일: <a th:if="${item.attachFile}" th:href="|/attach/${item.id}|"
+             th:text="${item.getAttachFile().getUploadFileName()}"/><br/>
+    <img th:each="imageFile : ${item.imageFiles}" th:src="|/images/${imageFile.getStoreFileName()}|" width="300" height="300"/>
+</div> <!-- /container -->
+</body>
+</html>
