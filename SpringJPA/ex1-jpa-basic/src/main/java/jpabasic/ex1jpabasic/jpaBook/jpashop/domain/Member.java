@@ -3,54 +3,38 @@ package jpabasic.ex1jpabasic.jpaBook.jpashop.domain;
 import javax.persistence.*;
 
 @Entity
+@Table(name = "MEMBER")
 public class Member {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "MEMBER_ID")
-    private Long id;
-    private String name;
-    private String city;
-    private String street;
-    private String zipcode;
+    private String id;
 
-    public Long getId() {
+    @Column(name = "NAME")
+    private String username;
+    private int age;
+
+    public String getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(String id) {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public String getUsername() {
+        return username;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setUsername(String username) {
+        this.username = username;
     }
 
-    public String getCity() {
-        return city;
+    public int getAge() {
+        return age;
     }
 
-    public void setCity(String city) {
-        this.city = city;
-    }
-
-    public String getStreet() {
-        return street;
-    }
-
-    public void setStreet(String street) {
-        this.street = street;
-    }
-
-    public String getZipcode() {
-        return zipcode;
-    }
-
-    public void setZipcode(String zipcode) {
-        this.zipcode = zipcode;
+    public void setAge(int age) {
+        this.age = age;
     }
 }
