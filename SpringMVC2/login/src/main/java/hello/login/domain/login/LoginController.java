@@ -104,7 +104,7 @@ public class LoginController {
         return "redirect:/";
     }
 
-    @PostMapping("/login")
+    @PostMapping("/login")  
     public String loginV4(
             @Valid @ModelAttribute LoginForm form, BindingResult bindingResult,
             @RequestParam(defaultValue = "/") String redirectURL,
@@ -161,6 +161,5 @@ public class LoginController {
         cookie.setMaxAge(0);
         response.addCookie(cookie);
     }
-
 
 }
