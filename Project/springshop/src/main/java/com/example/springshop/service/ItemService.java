@@ -2,11 +2,15 @@ package com.example.springshop.service;
 
 import com.example.springshop.dto.ItemFormDto;
 import com.example.springshop.dto.ItemImgDto;
+import com.example.springshop.dto.ItemSearchDto;
+import com.example.springshop.dto.MainItemDto;
 import com.example.springshop.entity.Item;
 import com.example.springshop.entity.ItemImg;
 import com.example.springshop.repository.ItemImgRepository;
 import com.example.springshop.repository.ItemRepository;
 import lombok.RequiredArgsConstructor;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.multipart.MultipartFile;
@@ -73,5 +77,15 @@ public class ItemService {
             itemImgService.updateItemImg(itemImgIds.get(i), itemImgFileList.get(i));
         }
         return item.getId();
+    }
+
+    @Transactional(readOnly = true)
+    public Page<Item> getAdminItemPage(ItemSearchDto itemSearchDto, Pageable pageable) {
+        return itemRepository.getAdminItemPage(itemSearchDto, pageable);
+    }
+
+    @Transactional(readOnly = true)
+    public Page<MainItemDto> getMainItemPage(ItemSearchDto itemSearchDto, Pageable pageable) {
+        return itemRepository.getMainItemPage(itemSearchDto, pageable);
     }
 }
