@@ -1,8 +1,10 @@
 package com.example.Rest.user;
 
+import com.fasterxml.jackson.annotation.JsonFilter;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import javax.validation.constraints.Past;
 import javax.validation.constraints.Size;
@@ -12,6 +14,8 @@ import java.util.Date;
 
 @Data
 @AllArgsConstructor
+@NoArgsConstructor
+@JsonFilter("UserInfo")
 public class User {
 
     private Integer id;
@@ -21,8 +25,8 @@ public class User {
     @Past
     private Date joinDate;
 
-    @JsonIgnore
+    //    @JsonIgnore
     private String password;
-    @JsonIgnore
+    //    @JsonIgnore
     private String ssn;
 }
