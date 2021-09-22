@@ -3,6 +3,7 @@ package com.example.Rest.user;
 
 import com.example.Rest.exception.UserNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.hateoas.EntityModel;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
@@ -29,6 +30,7 @@ public class UserController {
         if(user == null) {
             throw new UserNotFoundException(String.format("ID[%s] not found", id));
         }
+
         return user;
     }
 
