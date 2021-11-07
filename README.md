@@ -82,6 +82,7 @@
 ---
 
 스프링 MVC 기본 기능에 관련한 예제 코드 
+https://www.inflearn.com/course/%EC%8A%A4%ED%94%84%EB%A7%81-mvc-1/dashboard
 
 강의로부터 배운 것
 
