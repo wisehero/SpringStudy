@@ -10,5 +10,5 @@ public interface EmployeeRepository extends JpaRepository<Employee, Long> {
     // Delete Employees
     // Find Employees(one, all, or search by simple or complex properties)
 
-    
+
 }
