@@ -60,6 +60,7 @@
 ---
 
 스프링 부트와 JPA 기본편에서 습득한 지식을 가지고 웹 애플리케이션을 만듦.
+[실전! 스프링 부트와 JPA 활용1 - 웹 애플리케이션 개발 - 인프런 | 강의](https://www.inflearn.com/course/%EC%8A%A4%ED%94%84%EB%A7%81%EB%B6%80%ED%8A%B8-JPA-%ED%99%9C%EC%9A%A9-1/dashboard)
 
 강의로부터 배운 것
 
@@ -82,7 +83,7 @@
 ---
 
 스프링 MVC 기본 기능에 관련한 예제 코드 
-https://www.inflearn.com/course/%EC%8A%A4%ED%94%84%EB%A7%81-mvc-1/dashboard
+[스프링 MVC 1편  - 백엔드 웹 개발 핵심 기술 - 인프런 | 강의](https://www.inflearn.com/course/%EC%8A%A4%ED%94%84%EB%A7%81-mvc-1/dashboard)
 
 강의로부터 배운 것
 
