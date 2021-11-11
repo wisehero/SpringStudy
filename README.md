@@ -1,14 +1,14 @@
 # SpringStudy
 스프링 관련 강의 및 간단한 튜토리얼 데모 코드
 
-### Practice/boardDemo
+## Practice/boardDemo
 
 **Skills**
 - MySQL
 - Spring MVC
 - Spring Boot
 
-### Project/springshop
+## Project/springshop
 
 **Description**
 ---
@@ -22,7 +22,7 @@
 - Thymeleaf
 - jQuery
 
-### REST API / REST
+## REST API / REST
 
 **Description**
 ---
@@ -34,9 +34,9 @@
 - Spring Security
 - Spring Data JPA
 
-### SpringCore
+## SpringCore
 
-**Discription**
+**Description**
 ---
 
 스프링 핵심 기술 예제 코드 작성
@@ -54,7 +54,7 @@
 - Bean Life Cycle
 - Bean Scope
 
-###  Spring JPA
+##  Spring JPA
 
 **Description**
 ---
@@ -103,7 +103,7 @@
 	- HTTP 메세지 컨버터
 	- 요청 매핑 핸들러 어댑터 구조
 
-### Spring MVC2
+## Spring MVC2
 
 **Description**
 ---
