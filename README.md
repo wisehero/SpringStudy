@@ -10,7 +10,7 @@
 
 ## Project/springshop
 
-**Description**
+Description
 ---
 스프링 기술들을 활용하여 만든 간단한 커머스 앱 
 
@@ -24,7 +24,7 @@
 
 ## REST API / REST
 
-**Description**
+Description
 ---
 
 스프링 부트로 REST API를 이용한 회원 관리 기능 작성
@@ -36,7 +36,7 @@
 
 ## SpringCore
 
-**Description**
+Description
 ---
 
 스프링 핵심 기술 예제 코드 작성
@@ -77,9 +77,9 @@
 - 플랫 데이터 최적화
 - OSIV와 성능 최적화
 
-### Spring MVC1 
+## Spring MVC1 
 
-**Description**
+Description
 ---
 
 스프링 MVC 기본 기능에 관련한 예제 코드 
@@ -105,7 +105,7 @@
 
 ## Spring MVC2
 
-**Description**
+Description
 ---
 
 스프링 백엔드 개발 활용 기술에 관련한 예제 코드
