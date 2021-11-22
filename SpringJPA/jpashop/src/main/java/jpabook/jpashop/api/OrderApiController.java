@@ -21,6 +21,12 @@ public class OrderApiController {
 
     private final OrderRepository orderRepository;
 
+    /**
+     * V1. 엔티티 직접 노출
+     * - 엔티티가 변하면 API 스펙이 변한다.
+     * - 트랜잭션 안에서 지연 로딩 필요
+     * - 양방향 연관관계에서 문제 발생
+     */
     @GetMapping("/api/v1/orders")
     public List<Order> ordersV1() {
         List<Order> all = orderRepository.findAllByCriteria(new OrderSearch());
