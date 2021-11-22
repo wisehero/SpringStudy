@@ -29,12 +29,13 @@ public class OrderSimpleApiController {
     private final OrderRepository orderRepository;
     private final OrderSimpleQueryRespository orderSimpleQueryRespository;
 
+
     @GetMapping("/api/v1/simple-orders")
     public List<Order> ordersV1() {
         List<Order> all = orderRepository.findAllByCriteria(new OrderSearch());
         for (Order order : all) {
             order.getMember().getName(); //Lazy 강제 초기화
-            order.getDelivery().getAddress(); //Lazy 강제 초기환
+            order.getDelivery().getAddress(); //Lazy 강제 초기화
         }
 
         return all;
