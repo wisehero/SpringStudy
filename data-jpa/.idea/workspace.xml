@@ -4,18 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7e44cd31-9902-4ff9-b1b4-5eff641f5cd8" name="변경" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/study/datajpa/DataJpaApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/study/datajpa/DataJpaApplicationTests.java" beforeDir="false" />
-    </list>
+    <list default="true" id="efedd658-71ec-4776-92e3-b1351fa9f9b1" name="변경" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -29,22 +18,9 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
-        <task path="$PROJECT_DIR$">
-          <activation />
-        </task>
         <projects_view>
           <tree_state>
-            <expand>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="data-jpa" type="f1a62948:ProjectNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="data-jpa" type="f1a62948:ProjectNode" />
-                <item name="실행 구성" type="7b0102dc:RunConfigurationsNode" />
-              </path>
-            </expand>
+            <expand />
             <select />
           </tree_state>
         </projects_view>
@@ -59,28 +35,19 @@
       </list>
     </option>
   </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
-  </component>
   <component name="JpbToolWindowState">
     <option name="myId2FirstActivated">
       <map>
-        <entry key="JPA Inspector" value="true" />
-        <entry key="JPA Palette" value="true" />
         <entry key="JPA Structure" value="true" />
       </map>
     </option>
     <option name="myId2Visible">
       <map>
-        <entry key="JPA Inspector" value="true" />
-        <entry key="JPA Structure" value="false" />
+        <entry key="JPA Structure" value="true" />
       </map>
     </option>
   </component>
-  <component name="ProjectId" id="21KGbz7FPX1VDvynRG1lxDeBq8a" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
+  <component name="ProjectId" id="21VOrbmRRMzsnbJroScxHWUiEB2" />
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
@@ -93,30 +60,9 @@
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
-  <component name="RunManager" selected="Gradle.data-jpa [dependencies]">
-    <configuration name="data-jpa [dependencies]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="dependencies" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
+  <component name="RunManager">
     <configuration name="DataJpaApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="data-jpa.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="study.datajpa.DataJpaApplication" />
@@ -124,30 +70,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Gradle.data-jpa [dependencies]" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="애플리케이션 수준" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="디폴트 작업">
-      <changelist id="7e44cd31-9902-4ff9-b1b4-5eff641f5cd8" name="변경" comment="" />
-      <created>1637682440536</created>
+      <changelist id="efedd658-71ec-4776-92e3-b1351fa9f9b1" name="변경" comment="" />
+      <created>1638022987845</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1637682440536</updated>
-      <workItem from="1637682443183" duration="1616000" />
-      <workItem from="1637840284511" duration="11000" />
-      <workItem from="1638020512554" duration="866000" />
-      <workItem from="1638021873426" duration="65000" />
-      <workItem from="1638022024865" duration="417000" />
-      <workItem from="1638022447394" duration="40000" />
-      <workItem from="1638022512489" duration="35000" />
-      <workItem from="1638022618269" duration="87000" />
-      <workItem from="1638022757937" duration="86000" />
-      <workItem from="1638022945451" duration="24000" />
+      <updated>1638022987845</updated>
+      <workItem from="1638023006758" duration="738000" />
+      <workItem from="1638024284643" duration="194000" />
+      <workItem from="1638024529752" duration="122000" />
+      <workItem from="1638024667025" duration="84000" />
+      <workItem from="1638024764544" duration="132000" />
     </task>
     <servers />
   </component>
@@ -159,6 +95,7 @@
     <option featureType="dependencySupport" implementationName="java:org.junit.jupiter:junit-jupiter-params" />
     <option featureType="dependencySupport" implementationName="java:jakarta.xml.bind:jakarta.xml.bind-api" />
     <option featureType="dependencySupport" implementationName="java:org.slf4j:jul-to-slf4j" />
+    <option featureType="dependencySupport" implementationName="java:org.javassist:javassist" />
     <option featureType="dependencySupport" implementationName="java:org.hamcrest:hamcrest" />
     <option featureType="dependencySupport" implementationName="java:org.springframework.boot:spring-boot-starter-data-jpa" />
     <option featureType="dependencySupport" implementationName="java:org.springframework.data:spring-data-commons" />
@@ -170,6 +107,7 @@
     <option featureType="dependencySupport" implementationName="java:org.springframework:spring-webmvc" />
     <option featureType="dependencySupport" implementationName="java:net.minidev:accessors-smart" />
     <option featureType="dependencySupport" implementationName="java:com.h2database:h2" />
+    <option featureType="dependencySupport" implementationName="java:org.dom4j:dom4j" />
     <option featureType="dependencySupport" implementationName="java:org.springframework.boot:spring-boot-starter-test" />
     <option featureType="dependencySupport" implementationName="java:org.aspectj:aspectjweaver" />
     <option featureType="dependencySupport" implementationName="java:com.jayway.jsonpath:json-path" />
@@ -240,17 +178,5 @@
     <option featureType="dependencySupport" implementationName="java:org.apache.logging.log4j:log4j-api" />
     <option featureType="dependencySupport" implementationName="java:org.xmlunit:xmlunit-core" />
     <option featureType="dependencySupport" implementationName="java:net.bytebuddy:byte-buddy" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
