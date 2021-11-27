@@ -35,6 +35,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="JpbToolWindowState">
     <option name="myId2FirstActivated">
       <map>
@@ -48,6 +51,7 @@
     </option>
   </component>
   <component name="ProjectId" id="21VOrbmRRMzsnbJroScxHWUiEB2" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
@@ -84,6 +88,7 @@
       <workItem from="1638024529752" duration="122000" />
       <workItem from="1638024667025" duration="84000" />
       <workItem from="1638024764544" duration="132000" />
+      <workItem from="1638048470534" duration="18000" />
     </task>
     <servers />
   </component>
