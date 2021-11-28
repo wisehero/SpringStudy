@@ -5,7 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="efedd658-71ec-4776-92e3-b1351fa9f9b1" name="변경" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/study/datajpa/repository/MemberRepositoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/study/datajpa/entity/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/study/datajpa/entity/Member.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/study/datajpa/repository/MemberJpaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/study/datajpa/repository/MemberJpaRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/study/datajpa/repository/MemberRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/study/datajpa/repository/MemberRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,8 +36,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -86,13 +90,55 @@
   <component name="ReaderModeSettings">
     <option name="showLigatures" value="false" />
   </component>
-  <component name="RunManager" selected="Gradle.MemberJpaRepositoryTest.basicCRUD">
+  <component name="RunManager" selected="Gradle.MemberRepositoryTest.findByUsernameAndGreaterThan">
     <configuration name="MemberJpaRepositoryTest.basicCRUD" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" value="--tests &quot;study.datajpa.repository.MemberJpaRepositoryTest.basicCRUD&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="MemberJpaRepositoryTest.findByUsernameAndGreaterThan" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;study.datajpa.repository.MemberJpaRepositoryTest.findByUsernameAndGreaterThan&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="MemberRepositoryTest.findByUsernameAndGreaterThan" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;study.datajpa.repository.MemberRepositoryTest.findByUsernameAndGreaterThan&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -138,6 +184,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.MemberRepositoryTest.findByUsernameAndGreaterThan" />
+        <item itemvalue="Gradle.MemberJpaRepositoryTest.findByUsernameAndGreaterThan" />
         <item itemvalue="Gradle.MemberJpaRepositoryTest.basicCRUD" />
         <item itemvalue="Gradle.MemberTest.testEntity" />
       </list>
@@ -156,7 +204,7 @@
       <workItem from="1638024529752" duration="122000" />
       <workItem from="1638024667025" duration="84000" />
       <workItem from="1638024764544" duration="132000" />
-      <workItem from="1638048470534" duration="7020000" />
+      <workItem from="1638048470534" duration="9412000" />
     </task>
     <servers />
   </component>
