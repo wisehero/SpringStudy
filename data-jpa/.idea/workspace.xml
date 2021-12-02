@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="efedd658-71ec-4776-92e3-b1351fa9f9b1" name="변경" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/study/datajpa/dto/MemberDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/springshop/src/main/java/com/example/springshop/entity/BaseEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/springshop/src/main/java/com/example/springshop/entity/BaseEntity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/study/datajpa/repository/MemberRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/study/datajpa/repository/MemberRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +82,7 @@
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.annotationProcessors" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="ReaderModeSettings">
     <option name="showLigatures" value="false" />
@@ -203,6 +202,9 @@
       <workItem from="1638024667025" duration="84000" />
       <workItem from="1638024764544" duration="132000" />
       <workItem from="1638048470534" duration="11509000" />
+      <workItem from="1638337207715" duration="3000" />
+      <workItem from="1638457421086" duration="555000" />
+      <workItem from="1638479265435" duration="30000" />
     </task>
     <servers />
   </component>
@@ -308,5 +310,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
