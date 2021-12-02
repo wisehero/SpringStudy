@@ -32,11 +32,12 @@ public interface MemberRepository extends JpaRepository<Member, Long> {
     @Query("select  m from Member m where m.username in : names")
     List<Member> findByNames(@Param("names") List<String> names);
 
+    List<Member> findByUsernameAndAgeGreaterThan(String username, int age);
 
     // 다양한 반환 타입 지원
-    List<Member> findByListByUsername(String username); // 컬렉션
+    List<Member> findListByUsername(String username); // 컬렉션
 
-    Member findByMemberByUsername(String useranme); /// 단건
+    Member findByUsername(String username); /// 단건
 
     Optional<Member> findOptionalByUsername(String useranme); // 단건 옵셔널
 }
