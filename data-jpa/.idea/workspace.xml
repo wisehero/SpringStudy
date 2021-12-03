@@ -6,9 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="efedd658-71ec-4776-92e3-b1351fa9f9b1" name="변경" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/study/datajpa/repository/MemberJpaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/study/datajpa/repository/MemberJpaRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/study/datajpa/repository/MemberRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/study/datajpa/repository/MemberRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/study/datajpa/repository/MemberJpaRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/study/datajpa/repository/MemberJpaRepositoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/study/datajpa/repository/MemberRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/study/datajpa/repository/MemberRepositoryTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +88,7 @@
   <component name="ReaderModeSettings">
     <option name="showLigatures" value="false" />
   </component>
-  <component name="RunManager" selected="Gradle.MemberJpaRepositoryTest.paging">
+  <component name="RunManager" selected="Gradle.MemberRepositoryTest.paging">
     <configuration name="MemberJpaRepositoryTest.basicCRUD" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -174,12 +173,12 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="MemberTest.testEntity" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="MemberRepositoryTest.paging" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;study.datajpa.entity.MemberTest.testEntity&quot;" />
+        <option name="scriptParameters" value="--tests &quot;study.datajpa.repository.MemberRepositoryTest.paging&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -204,11 +203,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.MemberRepositoryTest.paging" />
         <item itemvalue="Gradle.MemberJpaRepositoryTest.paging" />
         <item itemvalue="Gradle.MemberRepositoryTest.findByUsernameAndGreaterThan" />
         <item itemvalue="Gradle.MemberJpaRepositoryTest.findByUsernameAndGreaterThan" />
         <item itemvalue="Gradle.MemberJpaRepositoryTest.basicCRUD" />
-        <item itemvalue="Gradle.MemberTest.testEntity" />
       </list>
     </recent_temporary>
   </component>
@@ -228,7 +227,7 @@
       <workItem from="1638048470534" duration="11509000" />
       <workItem from="1638337207715" duration="3000" />
       <workItem from="1638457421086" duration="555000" />
-      <workItem from="1638479265435" duration="1687000" />
+      <workItem from="1638479265435" duration="3644000" />
     </task>
     <servers />
   </component>
