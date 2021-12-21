@@ -5,6 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="efedd658-71ec-4776-92e3-b1351fa9f9b1" name="변경" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/InsertionSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -86,27 +88,13 @@
   <component name="ReaderModeSettings">
     <option name="showLigatures" value="false" />
   </component>
-  <component name="RunManager" selected="Gradle.MemberRepositoryTest.paging">
-    <configuration name="MemberJpaRepositoryTest.basicCRUD" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;study.datajpa.repository.MemberJpaRepositoryTest.basicCRUD&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
+  <component name="RunManager" selected="애플리케이션.InsertionSort">
+    <configuration name="InsertionSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="InsertionSort" />
+      <module name="data-jpa.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="MemberJpaRepositoryTest.findByUsernameAndGreaterThan" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -201,11 +189,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="애플리케이션.InsertionSort" />
         <item itemvalue="Gradle.MemberRepositoryTest.paging" />
         <item itemvalue="Gradle.MemberJpaRepositoryTest.paging" />
         <item itemvalue="Gradle.MemberRepositoryTest.findByUsernameAndGreaterThan" />
         <item itemvalue="Gradle.MemberJpaRepositoryTest.findByUsernameAndGreaterThan" />
-        <item itemvalue="Gradle.MemberJpaRepositoryTest.basicCRUD" />
       </list>
     </recent_temporary>
   </component>
@@ -229,6 +217,8 @@
       <workItem from="1638722306240" duration="332000" />
       <workItem from="1638727850357" duration="529000" />
       <workItem from="1639299464777" duration="622000" />
+      <workItem from="1639752243672" duration="740000" />
+      <workItem from="1639817889000" duration="486000" />
     </task>
     <servers />
   </component>
@@ -335,5 +325,16 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/InsertionSort.java</url>
+          <line>6</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
