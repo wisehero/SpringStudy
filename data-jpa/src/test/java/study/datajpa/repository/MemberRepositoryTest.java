@@ -22,6 +22,9 @@ public class MemberRepositoryTest {
     @Autowired
     MemberRepository memberRepository;
 
+    @Autowired
+    MemberJpaRepository memberJpaRepository;
+
     @Test
     public void findByUsernameAndGreaterThan() {
         Member m1 = new Member("AAA", 10);
@@ -66,4 +69,18 @@ public class MemberRepositoryTest {
         }
         System.out.println("totalElements = " + totalElements);
     }
+
+    @Test
+    public void bulkUpdate() throws Exception {
+        memberRepository.save(new Member("member1", 10));
+        memberRepository.save(new Member("member2", 19));
+        memberRepository.save(new Member("member3", 20));
+        memberRepository.save(new Member("member4", 21));
+        memberRepository.save(new Member("member5", 40));
+
+        int resultCount = memberRepository.bulkAgePlus(20);
+
+        assertThat(resultCount).isEqualTo(3);
+    }
+
 }
