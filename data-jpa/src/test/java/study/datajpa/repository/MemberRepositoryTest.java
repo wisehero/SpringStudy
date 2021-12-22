@@ -1,5 +1,6 @@
 package study.datajpa.repository;
 
+import org.hibernate.Hibernate;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -8,7 +9,12 @@ import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Sort;
 import org.springframework.test.annotation.Rollback;
 import study.datajpa.entity.Member;
+import study.datajpa.entity.Team;
 
+import javax.persistence.EntityManager;
+import javax.persistence.Persistence;
+import javax.persistence.PersistenceContext;
+import javax.persistence.PersistenceUnitUtil;
 import javax.transaction.Transactional;
 import java.util.List;
 
@@ -23,7 +29,10 @@ public class MemberRepositoryTest {
     MemberRepository memberRepository;
 
     @Autowired
-    MemberJpaRepository memberJpaRepository;
+    TeamRepository teamRepository;
+
+    @PersistenceContext
+    EntityManager em;
 
     @Test
     public void findByUsernameAndGreaterThan() {
@@ -81,6 +90,33 @@ public class MemberRepositoryTest {
         int resultCount = memberRepository.bulkAgePlus(20);
 
         assertThat(resultCount).isEqualTo(3);
+    }
+
+    @Test
+    public void findMemberLazy() throws Exception {
+
+        Team teamA = new Team("teamA");
+        Team teamB = new Team("TeamB");
+        teamRepository.save(teamA);
+        teamRepository.save(teamB);
+        memberRepository.save(new Member("member1", 10, teamA));
+        memberRepository.save(new Member("member2", 20, teamB));
+
+        List<Member> members = memberRepository.findAll();
+
+        em.flush();
+        em.clear();
+
+        for (Member member : members) {
+            member.getTeam().getName();
+            Hibernate.isInitialized(member.getTeam());
+
+//            PersistenceUnitUtil util =
+//                    em.getEntityManager.getPersistenceUnitUtil();
+//            unit.isLoaded(member.getTeam());
+        }
+
+
     }
 
 }
