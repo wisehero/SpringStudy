@@ -12,7 +12,7 @@ import javax.persistence.*;
 @Entity
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @Getter
-public class Member {
+public class Member extends JpaBaseEntity {
 
     @Id
     @GeneratedValue
@@ -45,7 +45,9 @@ public class Member {
         this.team = team;
         team.getMembers().add(this);
     }
+
 }
+
 
 /**
  * @Setter : 실무에서 가급적 사용 X
