@@ -5,6 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="efedd658-71ec-4776-92e3-b1351fa9f9b1" name="변경" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/study/datajpa/repository/MemberRepositoryCustom.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/study/datajpa/repository/MemberRepositoryImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/study/datajpa/repository/MemberRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/study/datajpa/repository/MemberRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/study/datajpa/repository/MemberRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/study/datajpa/repository/MemberRepositoryTest.java" afterDir="false" />
@@ -91,7 +93,7 @@
   <component name="ReaderModeSettings">
     <option name="showLigatures" value="false" />
   </component>
-  <component name="RunManager" selected="Gradle.MemberJpaRepositoryTest.bulkUpdate">
+  <component name="RunManager" selected="Gradle.MemberRepositoryTest.callCustom">
     <configuration name="InsertionSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="InsertionSort" />
       <module name="data-jpa.main" />
@@ -120,12 +122,12 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="MemberJpaRepositoryTest.paging" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="MemberRepositoryTest.bulkUpdate" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;study.datajpa.repository.MemberJpaRepositoryTest.paging&quot;" />
+        <option name="scriptParameters" value="--tests &quot;study.datajpa.repository.MemberRepositoryTest.bulkUpdate&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -141,12 +143,12 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="MemberRepositoryTest.bulkUpdate" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="MemberRepositoryTest.callCustom" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;study.datajpa.repository.MemberRepositoryTest.bulkUpdate&quot;" />
+        <option name="scriptParameters" value="--tests &quot;study.datajpa.repository.MemberRepositoryTest.callCustom&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -192,11 +194,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.MemberRepositoryTest.callCustom" />
         <item itemvalue="Gradle.MemberJpaRepositoryTest.bulkUpdate" />
         <item itemvalue="Gradle.MemberRepositoryTest.bulkUpdate" />
         <item itemvalue="Gradle.MemberRepositoryTest.paging" />
         <item itemvalue="애플리케이션.InsertionSort" />
-        <item itemvalue="Gradle.MemberJpaRepositoryTest.paging" />
       </list>
     </recent_temporary>
   </component>
@@ -223,7 +225,8 @@
       <workItem from="1639752243672" duration="740000" />
       <workItem from="1639817889000" duration="486000" />
       <workItem from="1640094660147" duration="2257000" />
-      <workItem from="1640181347620" duration="1716000" />
+      <workItem from="1640181347620" duration="3129000" />
+      <workItem from="1640269634884" duration="873000" />
     </task>
     <servers />
   </component>
