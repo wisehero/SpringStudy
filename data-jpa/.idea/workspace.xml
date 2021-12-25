@@ -87,7 +87,7 @@
   <component name="ReaderModeSettings">
     <option name="showLigatures" value="false" />
   </component>
-  <component name="RunManager" selected="Gradle.MemberTest.JpaEventBaseEntity">
+  <component name="RunManager" selected="Spring Boot.DataJpaApplication">
     <configuration name="MemberJpaRepositoryTest.bulkUpdate" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
