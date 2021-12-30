@@ -56,11 +56,12 @@ public class MemberRepositoryTest {
         memberRepository.save(new Member("member4", 10));
         memberRepository.save(new Member("member5", 10));
 
-//when
+        //when
         PageRequest pageRequest = PageRequest.of(0, 3, Sort.by(Sort.Direction.DESC,
                 "username"));
         Page<Member> page = memberRepository.findByAge(10, pageRequest);
-//then
+
+        //then
         List<Member> content = page.getContent(); //조회된 데이터
         assertThat(content.size()).isEqualTo(3); //조회된 데이터 수
         assertThat(page.getTotalElements()).isEqualTo(6); // 전체 데이터 수
