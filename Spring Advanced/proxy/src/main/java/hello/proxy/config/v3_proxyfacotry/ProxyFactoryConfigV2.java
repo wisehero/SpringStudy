@@ -20,7 +20,7 @@ public class ProxyFactoryConfigV2 {
 
     @Bean
     public OrderControllerV2 orderControllerV2(LogTrace logTrace) {
-        OrderControllerV2 orderController = new OrderControllerV2Impl(orderServiceV2(logTrace));
+        OrderControllerV2 orderController = new OrderControllerV2(orderServiceV2(logTrace));
 
         ProxyFactory factory = new ProxyFactory(orderController);
         factory.addAdvisor(getAdvisor(logTrace));
@@ -31,8 +31,8 @@ public class ProxyFactoryConfigV2 {
     }
 
     @Bean
-    public OrderServiceV1 orderServiceV2(LogTrace logTrace) {
-        OrderServiceV2 orderService = new OrderServiceV2Impl(orderRepositoryV2(logTrace));
+    public OrderServiceV2 orderServiceV2(LogTrace logTrace) {
+        OrderServiceV2 orderService = new OrderServiceV2(orderRepositoryV2(logTrace));
 
         ProxyFactory factory = new ProxyFactory(orderService);
         factory.addAdvisor(getAdvisor(logTrace));
@@ -43,7 +43,7 @@ public class ProxyFactoryConfigV2 {
 
     @Bean
     public OrderRepositoryV2 orderRepositoryV2(LogTrace logTrace) {
-        OrderRepositoryV1 orderRepository = new OrderRepositoryV1Impl();
+        OrderRepositoryV2 orderRepository = new OrderRepositoryV2();
 
         ProxyFactory factory = new ProxyFactory(orderRepository);
         factory.addAdvisor(getAdvisor(logTrace));
