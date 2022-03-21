@@ -9,3 +9,4 @@ public class SubClassLogic1 extends  AbstractTemplate{
         log.info("비즈니스 로직1 실행");
     }
 }
+

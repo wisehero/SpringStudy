@@ -17,3 +17,5 @@ public abstract class AbstractTemplate {
 
     protected abstract void call();
 }
+
+

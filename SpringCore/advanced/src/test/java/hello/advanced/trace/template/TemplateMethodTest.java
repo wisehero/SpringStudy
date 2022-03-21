@@ -28,6 +28,7 @@ public class TemplateMethodTest {
         log.info("비즈니스 로직2 실행");
         long endTime = System.currentTimeMillis();
         long resultTime = endTime - startTime;
+        log.info("resultTime={}", resultTime);
     }
 
     @Test
@@ -38,6 +39,7 @@ public class TemplateMethodTest {
         AbstractTemplate template2 = new SubClassLogic2();
         template2.execute();
     }
+
 
     @Test
     void templateMethodV2() {
@@ -60,3 +62,4 @@ public class TemplateMethodTest {
         template2.execute();
     }
 }
+

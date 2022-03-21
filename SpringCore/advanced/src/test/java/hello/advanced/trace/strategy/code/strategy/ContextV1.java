@@ -5,7 +5,7 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 public class ContextV1 {
 
-    private Strategy strategy; // 변하는 알고리즘
+    private final Strategy strategy; // 변하는 알고리즘
 
     public ContextV1(Strategy strategy) {
         this.strategy = strategy;
@@ -20,3 +20,4 @@ public class ContextV1 {
         log.info("resultTime={}", resultTime);
     }
 }
+
