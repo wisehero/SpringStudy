@@ -1,24 +1,24 @@
-®01:21:00.867 [Test worker] DEBUG org.springframework.jdbc.datasource.DriverManagerDataSource - Creating new JDBC DriverManager Connection to [jdbc:h2:tcp://localhost/~/test]
-Ì01:21:01.183 [Test worker] DEBUG org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loaded 11 bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
-™01:21:01.192 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'DB2'
-›01:21:01.259 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'Derby'
-˜01:21:01.260 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'H2'
-™01:21:01.261 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'HDB'
-š01:21:01.263 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'HSQL'
-ž01:21:01.264 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'Informix'
-œ01:21:01.265 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'MS-SQL'
-›01:21:01.265 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'MySQL'
-œ01:21:01.266 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'Oracle'
- 01:21:01.268 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'PostgreSQL'
-œ01:21:01.269 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'Sybase'
-Ð01:21:01.270 [Test worker] DEBUG org.springframework.jdbc.support.SQLErrorCodesFactory - Looking up default SQLErrorCodes for DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@66ce957f]
-€01:21:01.277 [Test worker] DEBUG org.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
-®01:21:01.277 [Test worker] DEBUG org.springframework.jdbc.datasource.DriverManagerDataSource - Creating new JDBC DriverManager Connection to [jdbc:h2:tcp://localhost/~/test]
-x01:21:01.286 [Test worker] DEBUG org.springframework.jdbc.support.SQLErrorCodesFactory - SQL error codes for 'H2' found
-æ01:21:01.286 [Test worker] DEBUG org.springframework.jdbc.support.SQLErrorCodesFactory - Caching SQL error codes for DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@66ce957f]: database product name is 'H2'
-Ü01:21:01.286 [Test worker] DEBUG org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator - Translating SQLException with SQL state '42S22', error code '42122', message [Column "BAD" not found; SQL statement:
+®01:24:19.634 [Test worker] DEBUG org.springframework.jdbc.datasource.DriverManagerDataSource - Creating new JDBC DriverManager Connection to [jdbc:h2:tcp://localhost/~/test]
+Ì01:24:19.969 [Test worker] DEBUG org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loaded 11 bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+™01:24:19.975 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'DB2'
+›01:24:20.040 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'Derby'
+˜01:24:20.041 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'H2'
+™01:24:20.042 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'HDB'
+š01:24:20.044 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'HSQL'
+ž01:24:20.045 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'Informix'
+œ01:24:20.046 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'MS-SQL'
+›01:24:20.047 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'MySQL'
+œ01:24:20.048 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'Oracle'
+ 01:24:20.049 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'PostgreSQL'
+œ01:24:20.050 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'Sybase'
+Ð01:24:20.052 [Test worker] DEBUG org.springframework.jdbc.support.SQLErrorCodesFactory - Looking up default SQLErrorCodes for DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@66ce957f]
+€01:24:20.059 [Test worker] DEBUG org.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+®01:24:20.060 [Test worker] DEBUG org.springframework.jdbc.datasource.DriverManagerDataSource - Creating new JDBC DriverManager Connection to [jdbc:h2:tcp://localhost/~/test]
+x01:24:20.067 [Test worker] DEBUG org.springframework.jdbc.support.SQLErrorCodesFactory - SQL error codes for 'H2' found
+æ01:24:20.067 [Test worker] DEBUG org.springframework.jdbc.support.SQLErrorCodesFactory - Caching SQL error codes for DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@66ce957f]: database product name is 'H2'
+Ü01:24:20.068 [Test worker] DEBUG org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator - Translating SQLException with SQL state '42S22', error code '42122', message [Column "BAD" not found; SQL statement:
 Pselect bad grammar [42122-200]]; SQL was [select bad grammar] for task [select]
-i01:21:01.291 [Test worker] INFO hello.jdbc.exception.translator.SpringExceptionTranslatorTest - resultEx
+i01:24:20.071 [Test worker] INFO hello.jdbc.exception.translator.SpringExceptionTranslatorTest - resultEx
 Ãorg.springframework.jdbc.BadSqlGrammarException: select; bad SQL grammar [select bad grammar]; nested exception is org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "BAD" not found; SQL statement:
 select bad grammar [42122-200]
 I	at org.h2.message.DbException.getJdbcSQLException(DbException.java:453)
