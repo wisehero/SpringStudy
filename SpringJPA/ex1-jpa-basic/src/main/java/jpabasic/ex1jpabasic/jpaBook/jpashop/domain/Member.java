@@ -1,40 +1,48 @@
 package jpabasic.ex1jpabasic.jpaBook.jpashop.domain;
 
+import lombok.Getter;
+
 import javax.persistence.*;
 
 @Entity
 @Table(name = "MEMBER")
+@Getter
 public class Member {
 
     @Id
+    @GeneratedValue
     @Column(name = "MEMBER_ID")
-    private String id;
+    private Long id;
 
     @Column(name = "NAME")
     private String username;
-    private int age;
 
-    public String getId() {
-        return id;
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "team_id")
+    private Team team;
+
+    public Member() {
+
     }
 
-    public void setId(String id) {
-        this.id = id;
-    }
-
-    public String getUsername() {
-        return username;
-    }
-
-    public void setUsername(String username) {
+    public Member(String username, Team team) {
         this.username = username;
+        if (team != null) {
+            changeTeam(team);
+        }
     }
 
-    public int getAge() {
-        return age;
+    public void changeTeam(Team team) {
+        this.team = team;
+        team.getMembers().add(this);
     }
 
-    public void setAge(int age) {
-        this.age = age;
+    @Override
+    public String toString() {
+        final StringBuilder sb = new StringBuilder("Member{");
+        sb.append("id=").append(id);
+        sb.append(", username='").append(username).append('\'');
+        sb.append('}');
+        return sb.toString();
     }
 }
