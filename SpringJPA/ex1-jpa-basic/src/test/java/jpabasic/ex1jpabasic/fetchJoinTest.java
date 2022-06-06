@@ -105,4 +105,33 @@ public class fetchJoinTest {
             }
         }
     }
+
+    @Test
+    @DisplayName("컬렉션 페치 조인 중복 제거")
+    void collectionFetchDistinct() {
+        Team teamA = new Team("TeamA");
+        Team teamB = new Team("TeamB");
+        teamRepository.save(teamA);
+        teamRepository.save(teamB);
+
+        Member member1 = new Member("member1", teamA);
+        Member member2 = new Member("member2", teamA);
+        Member member3 = new Member("member3", teamB);
+        memberRepository.save(member1);
+        memberRepository.save(member2);
+        memberRepository.save(member3);
+
+        em.flush();
+        em.clear();
+
+        List<Team> findTeams = teamRepository.findTeamByFetchDistinct();
+
+        for (Team team : findTeams) {
+            System.out.println("teamname = " + team.getName() + " team = " + team);
+
+            for (Member member : team.getMembers()) {
+                System.out.println("-> username = " + member.getUsername() + ", member = " + member);
+            }
+        }
+    }
 }

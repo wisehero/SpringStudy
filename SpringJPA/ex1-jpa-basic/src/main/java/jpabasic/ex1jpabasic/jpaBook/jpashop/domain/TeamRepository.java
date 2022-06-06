@@ -8,4 +8,7 @@ import java.util.List;
 public interface TeamRepository extends JpaRepository<Team, Long> {
     @Query("SELECT t FROM Team t join fetch t.members where t.name='TeamA'")
     List<Team> findTeamByFetch();
+
+    @Query("SELECT DISTINCT t FROM Team t join fetch t.members where t.name='TeamA'")
+    List<Team> findTeamByFetchDistinct();
 }
