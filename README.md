@@ -1,132 +1,109 @@
 # SpringStudy
-스프링 관련 강의 및 간단한 튜토리얼 데모 코드
+스프링 관련 학습 자료들 예제 코드를 저장하는 저장소
 
-## Practice/boardDemo
+## REST API/REST
 
-**Skills**
-- MySQL
-- Spring MVC
-- Spring Boot
+### Description
+[Spring Boot를 이용한 RESTful Web Services 개발 - 인프런 | 강의](https://www.inflearn.com/course/spring-boot-restful-web-services)
+를 학습하면서 작성한 예시 코드 모음
 
-## Project/springshop
+### What I Learned
 
-Description
----
-스프링 기술들을 활용하여 만든 간단한 커머스 앱 
+- Web Service And Web Application Overview
+- SOAP and REST
+- REST API with Spring Boot
+- REST API with HTTP Method
+- Exception Handling For HTTP Status Code
+- Exception Handling Using Spring AOP
+- Internalization, Filter, API Version Control
+- HATEOAS, Swagger, Spring Security
+- JPA
+- RESTful API Guide
 
-- Spring Boot
-- Spring MVC
-- Spring Security
-- Sprint Data JPA
-- MySQL
-- Thymeleaf
-- jQuery
-
-## REST API / REST
-
-Description
----
-
-스프링 부트로 REST API를 이용한 회원 관리 기능 작성
-
-- Spring Boot
-- Srping MVC
-- Spring Security
-- Spring Data JPA
 
 ## SpringCore
 
-Description
----
+### Description
+[스프링 핵심 원리 - 기본편 - 인프런 | 강의](https://www.inflearn.com/course/%EC%8A%A4%ED%94%84%EB%A7%81-%ED%95%B5%EC%8B%AC-%EC%9B%90%EB%A6%AC-%EA%B8%B0%EB%B3%B8%ED%8E%B8)
+를 학습하면서 작성한 예시 코드 모음
 
-스프링 핵심 기술 예제 코드 작성
-[스프링 핵심 원리 - 기본편 - 인프런 | 강의](https://www.inflearn.com/course/%EC%8A%A4%ED%94%84%EB%A7%81-%ED%95%B5%EC%8B%AC-%EC%9B%90%EB%A6%AC-%EA%B8%B0%EB%B3%B8%ED%8E%B8/dashboard)
+### What I Learned
 
-강의로부터 배운 것 
-
-- 객체 지향 설계 5가지 원칙(SOLID)
-- 비즈니스 요구사항에 따른 도메인 설계 및 테스트
-- 관심사의 분리, IoC, DI, 그리고 컨테이너
-- Spring Bean
-- 싱글톤 컨테이너
-- 컴포넌트 스캔
-- 의존 관계 주입
-- Bean Life Cycle
+- OOP and Spring
+- SOLID 
+- Dependency Injection, Inversion of Control, Container
+- Spring Container and Spring Bean
+- Singleton Pattern, @Configuration
+- Component Scan, Auto Dependency Injection
+- Bean LifeCycle Callback
 - Bean Scope
 
-##  Spring JPA
+## SpringCoreAdvanced
 
-**Description**
----
+### Description
+[스프링 핵심 원리 - 고급편 - 인프런 | 강의](https://www.inflearn.com/course/%EC%8A%A4%ED%94%84%EB%A7%81-%ED%95%B5%EC%8B%AC-%EC%9B%90%EB%A6%AC-%EA%B3%A0%EA%B8%89%ED%8E%B8)를 학습하면서 작성한 예시 코드 모음
 
-스프링 부트와 JPA 기본편에서 습득한 지식을 가지고 웹 애플리케이션을 만듦.
-[실전! 스프링 부트와 JPA 활용1 - 웹 애플리케이션 개발 - 인프런 | 강의](https://www.inflearn.com/course/%EC%8A%A4%ED%94%84%EB%A7%81%EB%B6%80%ED%8A%B8-JPA-%ED%99%9C%EC%9A%A9-1/dashboard)
+### What I Learned
 
-강의로부터 배운 것
+- ThreadLocal
+- Template Method Pattern, Callback Pattern
+- Proxy Pattern, Decorator Pattern
+- Dynamic Proxy
+- Proxy with Spring
+- Bean post processor
+- @Aspect AOP
+- AOP - Pointcut
 
-- 엔티티 클래스 개발
-- 애플리케이션 아키텍처
-- 도메인 주도 개발
-- 변경 감지와 병합
-- 회원 관리 API 개발 기본
-- API 개발 고급
-- 엔티티 직접 노출하는 것과 DTO로 변환하는 것의 차이
-- 페치 조인 최적화
-- 페이징과 한계 돌파
-- 컬렉션 조회 최적화
-- 플랫 데이터 최적화
-- OSIV와 성능 최적화
+## SpringDB
 
-## Spring MVC1 
+### Description
 
-Description
----
+[스프링 DB 1편 - 데이터 접근 핵심 원리 - 인프런 | 강의](https://www.inflearn.com/course/%EC%8A%A4%ED%94%84%EB%A7%81-db-1)을 학습하면서 작성한 예시 코드 모음
 
-스프링 MVC 기본 기능에 관련한 예제 코드 
-[스프링 MVC 1편  - 백엔드 웹 개발 핵심 기술 - 인프런 | 강의](https://www.inflearn.com/course/%EC%8A%A4%ED%94%84%EB%A7%81-mvc-1/dashboard)
+### What I Learn
 
-강의로부터 배운 것
+- JDBC
+- Connection Pool and DataSource
+- Transaction
+- Spring Transaction
+- Transaction AOP
+- Checked Exception and Unchecked Exception
+- Auto Resource Register by Spring Boot
+- Abstraction of Spring Exception 
+- JDBC Template
 
-- HTML, HTTP API, CSR, SSR
-- 서블릿 사용 방법
-- JSP, MVC 패턴
-- MVC 프레임워크 직접 만들기
-- 스프링 MVC 구조 이해
-	- 핸들러 매핑과 핸들러 어댑터
-	- 뷰 리졸버
-- 스프링 MVC 기본 기능
-	- 로깅
-	- 요청매핑
-	- 쿼리 파라미터, HTML Form, @RequestParam, @ModelAttribute
-	- 단순 텍스트 요청, JSON 요청
-	- 정적 리소스, 뷰 템플릿 응답, HTTP API 응답
-	- HTTP 메세지 컨버터
-	- 요청 매핑 핸들러 어댑터 구조
+## SpringDB2
 
-## Spring MVC2
+### Description
 
-Description
----
+[스프링 DB 2편 - 데이터 접근 활용 기술 - 인프런 | 강의](https://www.inflearn.com/course/%EC%8A%A4%ED%94%84%EB%A7%81-db-2)을 학습하면서 작성한 예시 코드 모음
 
-스프링 백엔드 개발 활용 기술에 관련한 예제 코드
-[스프링 MVC 2편 - 백엔드 웹 개발 활용 기술 - 인프런 | 강의](https://www.inflearn.com/course/%EC%8A%A4%ED%94%84%EB%A7%81-mvc-2/dashboard)
+### What I Learn
+- JdbcTemplate
+	- SimpleJdbcInsert
+	- NamedParamterJdbcTemplate
+- Embedded DB
+- Mybatis
+- JPA
+- Spring Data JPA
+- Querydsl
+- Spring Transaction AOP, Spring Transaction Option
+- Spring Transaction Propagation
 
-강의로부터 배운 것
+## SpringDataJPA
+### Description
 
-- 타임리프
-- 메세지, 국제화
-- 검증
-- Bean Validation
-- 로그인 처리
-	- 쿠키, 세션
-	- 필터, 인터셉터
-- 예외 처리와 오류 페이지
-- API 예외 처리
-	- ExceptionResolver
-	- @ControllerAdvice
-- 스프링 타입 컨버터
-- 파일 업로드
-	- 서블릿 파일 업로드
-	- 스프링 파일 업로드
+[실전! 스프링 데이터 JPA - 인프런 | 강의](https://www.inflearn.com/course/%EC%8A%A4%ED%94%84%EB%A7%81-%EB%8D%B0%EC%9D%B4%ED%84%B0-JPA-%EC%8B%A4%EC%A0%84)을 학습하면서 작성한 예시 코드 모음
 
+### What I Learn
 
+- JPA NamedQuery
+- @Query
+- Parameter Binding
+	- position
+	- name
+- Paging and Sort
+- @EntityGraph
+- JPA Hint and Lock
+- Auditing
+- Web Extension
