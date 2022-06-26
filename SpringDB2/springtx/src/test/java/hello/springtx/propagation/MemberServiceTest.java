@@ -1,6 +1,7 @@
 package hello.springtx.propagation;
 
 import static org.assertj.core.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,6 +27,19 @@ class MemberServiceTest {
 		// when
 		memberService.joinV1(username);
 		// then
+		assertThat(memberRepository.find(username)).isNotNull();
+		assertThat(logRepository.find(username)).isNotNull();
+	}
+
+	@Test
+	void singleTx() {
+		// given
+		String username = "outerTxOff_success";
+
+		// when
+		memberService.joinV1(username);
+
+		// when
 		assertThat(memberRepository.find(username)).isNotNull();
 		assertThat(logRepository.find(username)).isNotNull();
 	}
