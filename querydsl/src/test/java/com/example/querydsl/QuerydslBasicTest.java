@@ -3,6 +3,8 @@ package com.example.querydsl;
 import static com.example.querydsl.entity.QMember.*;
 import static org.assertj.core.api.Assertions.*;
 
+import java.util.List;
+
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 
@@ -62,6 +64,34 @@ public class QuerydslBasicTest {
 				.fetchOne();
 
 		assertThat(findMember.getUsername()).isEqualTo("member1");
-
 	}
+
+	@Test
+	public void search() {
+		Member findMember = queryFactory
+				.selectFrom(member)
+				.where(member.username.eq("member1")
+						.and(member.age.eq(10)))
+				.fetchOne();
+
+		assertThat(findMember.getUsername()).isEqualTo("member1");
+	}
+
+	@Test
+	public void searchAndParam() {
+		List<Member> result1 = queryFactory
+				.selectFrom(member)
+				.where(member.username.eq("member1"),
+						member.age.eq(10))
+				.fetch();
+
+		assertThat(result1.size()).isEqualTo(1);
+	}
+
+	/**
+	 *  fetch() -> 리스트 조회, 데이터 없으면 빈 리스트 반환
+	 *  fetchOne() -> 단건 조회
+	 *  fetchFirst() -> limit(1).fetchOne()
+	 */
+
 }
