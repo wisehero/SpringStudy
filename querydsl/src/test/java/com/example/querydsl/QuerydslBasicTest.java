@@ -1,6 +1,7 @@
 package com.example.querydsl;
 
 import static com.example.querydsl.entity.QMember.*;
+import static com.example.querydsl.entity.QTeam.*;
 import static org.assertj.core.api.Assertions.*;
 
 import java.util.List;
@@ -159,5 +160,30 @@ public class QuerydslBasicTest {
 		assertThat(tuple.get(member.age.avg())).isEqualTo(25);
 		assertThat(tuple.get(member.age.max())).isEqualTo(40);
 		assertThat(tuple.get(member.age.min())).isEqualTo(10);
+	}
+
+	@Test
+	public void group() throws Exception {
+		/*
+		 * select team.name, avg(member1.age)
+		 * from Member member1
+		 * inner join member1.team as team
+		 * group by team.name
+		 */
+		List<Tuple> result = queryFactory
+				.select(team.name, member.age.avg())
+				.from(member)
+				.join(member.team, team)
+				.groupBy(team.name)
+				.fetch();
+
+		Tuple teamA = result.get(0);
+		Tuple teamB = result.get(1);
+
+		assertThat(teamA.get(team.name)).isEqualTo("teamA");
+		assertThat(teamA.get(member.age.avg())).isEqualTo(15);
+
+		assertThat(teamB.get(team.name)).isEqualTo("teamB");
+		assertThat(teamB.get(member.age.avg())).isEqualTo(35);
 	}
 }
