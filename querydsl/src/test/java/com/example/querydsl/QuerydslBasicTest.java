@@ -16,6 +16,7 @@ import org.springframework.transaction.annotation.Transactional;
 import com.example.querydsl.entity.Member;
 import com.example.querydsl.entity.Team;
 import com.querydsl.core.QueryResults;
+import com.querydsl.core.Tuple;
 import com.querydsl.jpa.impl.JPAQueryFactory;
 
 @SpringBootTest
@@ -139,5 +140,24 @@ public class QuerydslBasicTest {
 		assertThat(queryResults.getLimit()).isEqualTo(2);
 		assertThat(queryResults.getOffset()).isEqualTo(1);
 		assertThat(queryResults.getResults().size()).isEqualTo(2);
+	}
+
+	@Test
+	public void aggregation() throws Exception {
+		List<Tuple> result = queryFactory
+				.select(member.count(),
+						member.age.sum(),
+						member.age.avg(),
+						member.age.max(),
+						member.age.min())
+				.from(member)
+				.fetch();
+
+		Tuple tuple = result.get(0);
+		assertThat(tuple.get(member.count())).isEqualTo(4);
+		assertThat(tuple.get(member.age.sum())).isEqualTo(100);
+		assertThat(tuple.get(member.age.avg())).isEqualTo(25);
+		assertThat(tuple.get(member.age.max())).isEqualTo(40);
+		assertThat(tuple.get(member.age.min())).isEqualTo(10);
 	}
 }
