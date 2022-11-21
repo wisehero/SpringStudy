@@ -189,9 +189,6 @@ public class QuerydslBasicTest {
 
 	@Test
 	public void join() throws Exception {
-		em.persist(new Member("teamA"));
-		em.persist(new Member("teamB"));
-
 		List<Member> result = queryFactory
 				.selectFrom(member)
 				.join(member.team, team)
