@@ -38,7 +38,7 @@ public class JobListenerConfig {
 
 	@JobScope
 	@Bean
-	public Step JobListenerStep(Tasklet jobListenerTasklet) {
+	public Step jobListenerStep(Tasklet jobListenerTasklet) {
 		return stepBuilderFactory.get("jobListenerStep")
 				.tasklet(jobListenerTasklet)
 				.build();
