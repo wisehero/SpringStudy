@@ -12,6 +12,9 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
+import stack_example.stack_sync.repository.StockRepository;
+import stack_example.stack_sync.service.PessimisticLockStockService;
+
 @SpringBootTest
 class StockServiceTest {
 

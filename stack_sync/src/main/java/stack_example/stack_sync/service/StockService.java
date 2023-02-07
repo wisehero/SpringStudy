@@ -1,7 +1,9 @@
-package stack_example.stack_sync.domain;
+package stack_example.stack_sync.service;
 
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
+
+import stack_example.stack_sync.domain.Stock;
+import stack_example.stack_sync.repository.StockRepository;
 
 @Service
 public class StockService {

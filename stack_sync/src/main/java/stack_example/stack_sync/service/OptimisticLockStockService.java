@@ -1,7 +1,10 @@
-package stack_example.stack_sync.domain;
+package stack_example.stack_sync.service;
 
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+
+import stack_example.stack_sync.domain.Stock;
+import stack_example.stack_sync.repository.StockRepository;
 
 // 별도의 락을 잡지 않으므로 성능상 이점이 있다.
 // 업데이트가 실패했을때를 대비한 로직을 개발자가 직접 작성

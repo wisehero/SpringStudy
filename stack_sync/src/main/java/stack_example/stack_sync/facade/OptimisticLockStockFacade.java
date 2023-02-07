@@ -1,6 +1,8 @@
-package stack_example.stack_sync.domain;
+package stack_example.stack_sync.facade;
 
 import org.springframework.stereotype.Service;
+
+import stack_example.stack_sync.service.OptimisticLockStockService;
 
 @Service
 public class OptimisticLockStockFacade {
